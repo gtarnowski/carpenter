@@ -1,5 +1,3 @@
-
-
 $(window).scroll(function() {
   if ($(document).scrollTop() > 50) {
     $('nav').addClass('shrink');
@@ -7,8 +5,6 @@ $(window).scroll(function() {
     $('nav').removeClass('shrink');
   }
 });
-
-
 
 $(document).ready(function(){
 	
@@ -28,6 +24,7 @@ $(document).ready(function(){
 	});
 	
 });
+
 lightbox.option({
       'albumLabel':"Zdjęcie %1 z %2",
       'fadeDuration': 100,
