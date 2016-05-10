@@ -9,13 +9,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Stolarnia</title>
+    <title>Stolarnia Smętek | </title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="dist/css/lightbox.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,200&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -130,8 +131,8 @@
                 <p class="text-center"> Poniżej przedstawiamy nasze przykladowe projekty</p>
                 <hr>
                 <div class="col-lg-4 col-sm-6">
-                    <a class="big-box">
-                        <img src="gfx/1.jpg" alt="" class="img-responsive">
+                    <a href="gfx/1.jpg" class="big-box  example-image-link" data-lightbox="example-set" data-title="Przykładowy tytuł">
+                        <img src="gfx/1.jpg" alt="" class="img-responsive example-image">
                         <div class="text-box">
                             <div class="text-out">
                                 <h3 class="item-category">Projekt</h3>
@@ -141,8 +142,8 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a class="big-box">
-                        <img src="gfx/2.jpg" alt="" class="img-responsive">
+                    <a href="gfx/2.jpg" class="big-box  example-image-link" data-lightbox="example-set" data-title="Przykładowy tytuł">
+                        <img src="gfx/2.jpg" alt="" class="img-responsive example-image">
                         <div class="text-box">
                             <div class="text-out">
                                 <h3 class="item-category">Projekt</h3>
@@ -152,8 +153,8 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a class="big-box">
-                        <img src="gfx/3.jpg" alt="" class="img-responsive">
+                    <a href="gfx/3.jpg" class="big-box example-image-link" data-lightbox="example-set" data-title="Przykładowy tytuł">
+                        <img src="gfx/3.jpg" alt="" class="img-responsive example-image">
                         <div class="text-box">
                             <div class="text-out">
                                 <h3 class="item-category">Projekt</h3>
@@ -163,8 +164,8 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a class="big-box">
-                        <img src="gfx/4.jpg" alt="" class="img-responsive">
+                    <a href="gfx/4.jpg" class="big-box example-image-link" data-lightbox="example-set" data-title="Przykładowy tytuł">
+                        <img src="gfx/4.jpg" alt="" class="img-responsive example-image">
                         <div class="text-box">
                             <div class="text-out">
                                 <h3 class="item-category">Projekt</h3>
@@ -174,8 +175,8 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a class="big-box">
-                        <img src="gfx/5.jpg" alt="" class="img-responsive">
+                    <a href="gfx/5.jpg" class="big-box example-image-link" data-lightbox="example-set" data-title="Przykładowy tytuł">
+                        <img src="gfx/5.jpg" alt="" class="img-responsive example-image">
                         <div class="text-box">
                             <div class="text-out">
                                 <h3 class="item-category">Projekt</h3>
@@ -185,8 +186,8 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a class="big-box">
-                        <img src="gfx/6.jpg" alt="" class="img-responsive">
+                    <a href="gfx/6.jpg" class="big-box example-image-link" data-lightbox="example-set" data-title="Przykładowy tytuł">
+                        <img src="gfx/6.jpg" alt="" class="img-responsive example-image">
                         <div class="text-box">
                             <div class="text-out">
                                 <h3 class="item-category">Projekt</h3>
@@ -199,13 +200,7 @@
             <br><br>
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <a class="btn showGallery">ZOBACZ WIĘCEJ!</a>
-                </div>
-            </div>
-            <div class="row full-gallery" hidden>
-                <div class="col-lg-12">
-                    asdasdasdas
-                    <p>sdasd</p>
+                    <a href="full-gallery.html" class="btn showGallery">ZOBACZ WIĘCEJ!</a>
                 </div>
             </div>
         </div>
@@ -255,7 +250,7 @@
           </div>
         </div>
       </div>
-   
+  
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -272,6 +267,7 @@
     <script src="js/contact_me.js"></script>
 
     <!-- Custom Theme JavaScript -->
+    <script src="dist/js/lightbox.js"></script>
     <script src="js/carpenter.js"></script>
 
 </body>

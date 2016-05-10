@@ -6,10 +6,6 @@ $(window).scroll(function() {
   }
 });
 
-$('.showGallery').click(function(){
-   $('.full-gallery').toggle('show') 
-});
-
 $(document).ready(function(){
 	
 	//Check to see if the window is top if not then display button
@@ -29,9 +25,6 @@ $(document).ready(function(){
 	
 });
 
-$(function(){
-    $('.big-box').on('click',function(){
-        $('.imagepreview').attr('src', $(this).find('img').attr('src'));
-        $('#imagemodal').modal('show');   
-    })
-})
+lightbox.option({
+      'albumLabel':"Zdjęcie %1 z %2"
+});
