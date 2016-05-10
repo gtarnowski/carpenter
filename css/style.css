@@ -138,7 +138,7 @@ header .col-lg-12 p:nth-child(2n){
 #gallery hr, #fullGallery hr{
     border-color: #ffffff !important;
     border-width: 5px !important;
-     max-width: 70px;
+    max-width: 70px;
 }
 #gallery.content h2, #fullGallery.content h2{
     text-align: center;
@@ -160,6 +160,7 @@ header .col-lg-12 p:nth-child(2n){
     position: relative;
     display: block;
     max-width: 650px;
+    
     margin: 0 auto;
 }
 .big-box .text-box{
@@ -210,7 +211,6 @@ header .col-lg-12 p:nth-child(2n){
     border: 7px solid #fff
 }
 
-
 /*************************************************/
 #footer {
     background-color: #1a1a1a;
@@ -242,7 +242,10 @@ header .col-lg-12 p:nth-child(2n){
 /*************************************************/
 body#galleryPage{
     background-color: #2a2a2a;
-    padding: none !important
+    
+}
+body#galleryPage section{
+    padding: 10px 20px;
 }
 body #fullGallery p{
     padding: 10px;
@@ -252,6 +255,9 @@ body #fullGallery p{
 }
 #fullGallery .topRow{
     margin-top: 20px;
+}
+#fullGallery .imgBox{
+    padding: 10px 0px;
 }
 /*************************************************/
 .scrollToTop{
