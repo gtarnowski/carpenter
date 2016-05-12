@@ -1,7 +1,22 @@
+/*MAIN CLASSES**********************************************/
 body{
      height: 100%;
     width: 100%;
     font-family: 'Titillium Web', sans-serif !important;
+}
+body>p{
+    display: block;
+    margin: 0;
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 0px 0;
+}
+body p a{
+    color: #3b3b3b;
+}
+body p a:hover{
+    color: #3b3b3b;
+    text-decoration: none;
 }
 hr {
   border-color: #00d179 !important;
@@ -16,7 +31,62 @@ section{
     padding: 60px 20px;
     
 }
-/*************************************************/
+/*DEFAULT SETTINGS FOR BTN****************************************/
+.btn.btn-white{
+    font-size: 1.2em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 100px;
+    transition: all 0.3s;
+    font-weight: 900;
+    background-color: #fff;
+    color: #000;
+}
+
+.btn.btn-white:hover{
+    letter-spacing: 1px;
+    transition: all 0.3s;
+    color: #000;
+}
+.btn.btn-white.btn-white-xs{
+    padding: 7px 20px;
+    font-size: 0.9em;
+    
+}
+.btn.btn-white.btn-white-xs:hover{
+    padding: 7px 20px;
+    font-size: 0.9em;
+    letter-spacing: 0px !important;
+    background-color: #00d179;
+    color: #fff;
+}
+/*GO TO THE TOP ARROW**********************************************/
+.scrollToTop{
+    width:50px; 
+	height:50px;
+	padding:10px; 
+	text-align:center; 
+	background: #000;
+	font-weight: bold;
+	color: #444;
+	text-decoration: none;
+	position:fixed;
+	top: 800px;
+	right:10px;
+	display:none;
+    z-index: 20000;
+    transition: all 0.3s;
+}
+.scrollToTop:hover{
+	text-decoration:none;
+     background-color: rgba(255, 255, 255, 0.19);
+    transition: all 0.3s;
+}
+.scrollToTop i{
+    font-size: 1.9em;
+    color: #00d179;
+}
+/*TOP NAVBAR***********************************************/
 nav {
     padding: 15px;
     font-size: 1.6em;
@@ -42,7 +112,7 @@ nav .nav a:hover{
 nav .active{
     background-color: rgba(0, 209, 121, 0.49)
 }
-/*************************************************/
+/*SKRING NAV BAR AFTER X PIXELS*******************************/
 nav.navbar.shrink {
     background-color: #1a1a1a;
     padding: 0px;
@@ -57,7 +127,7 @@ nav.navbar.shrink .navbar-brand{
 nav.navbar.shrink .active{
     background-color: inherit;
 }
-/*************************************************/
+/*HEADER***********************************************/
 header{
     position: relative;
     width: 100%;
@@ -87,7 +157,7 @@ header .col-lg-12 p:nth-child(2n){
     background-color: rgba(0, 209, 121, 0.11);
     border-radius: 
 }
-/*************************************************/
+/*PROJECTS***********************************************/
 #projects.content{
     background-color: #00d179;
     color: #FFF;
@@ -100,26 +170,11 @@ header .col-lg-12 p:nth-child(2n){
     border-width: 5px !important;
      max-width: 70px;
 }
-#projects.content .btn, .showGallery{
-    font-size: 1.2em;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 100px;
-    transition: all 0.3s;
-    font-weight: 900;
-    background-color: #fff;
-    color: #000;
-}
-#projects.content .btn:hover, .showGallery:hover{
-    letter-spacing: 1px;
-    transition: all 0.3s;
-    color: #000;
-}
 #projects.content p{
     padding: 20px;
     font-size: 1.3em;
 }
-/*************************************************/
+/*OFFER***********************************************/
 #offer.content #items i{
     font-size: 4em;
     color: #00d179;
@@ -134,7 +189,7 @@ header .col-lg-12 p:nth-child(2n){
     font-size: 1.4em;
     font-weight: lighter;
 }
-/*************************************************/
+/*GALLERY***********************************************/
 #gallery hr, #fullGallery hr{
     border-color: #ffffff !important;
     border-width: 5px !important;
@@ -156,6 +211,7 @@ header .col-lg-12 p:nth-child(2n){
 #gallery .col-lg-4{
     padding: 10px;
 }
+/*GALLERY PREVIEW***********************************************/
 .big-box {
     position: relative;
     display: block;
@@ -196,7 +252,7 @@ header .col-lg-12 p:nth-child(2n){
     font-size: 1.5em;
     font-weight: normal;
 }
-/*************************************************/
+/*PRICES***********************************************/
 #prices .timeline{
     list-style: none;
     padding: 0;
@@ -211,10 +267,21 @@ header .col-lg-12 p:nth-child(2n){
     border: 7px solid #fff
 }
 
-/*************************************************/
+/*FOOTER WITH FORM***********************************************/
 #footer {
     background-color: #1a1a1a;
-    color: #fff;;
+    color: #fff;
+    text-align: center;
+    padding: 20px
+}
+#footer .row.row-centered{
+    display: inline-block;
+    margin: auto;
+}
+#footer .row .col-md-4{
+    width: 400px;
+    text-align: left;
+    margin: 10px;
 }
 #footer p{
     padding: 10px;
@@ -223,9 +290,6 @@ header .col-lg-12 p:nth-child(2n){
 #footer i{
     font-size: 3em;
     color: #00d179;
-}
-#footer .container-fluid:last-child .row{
-    
 }
 #footer a{
     display: block;
@@ -239,10 +303,15 @@ header .col-lg-12 p:nth-child(2n){
     color: #00d179;
     transition: all 0.3s;
 }
-/*************************************************/
+#footer .row.addresWrap{
+    margin-top: 10px;
+}
+#footer a{
+    cursor: pointer;
+}
+/*GALLERY PAGE ***********************************************/
 body#galleryPage{
     background-color: #2a2a2a;
-    
 }
 body#galleryPage section{
     padding: 10px 20px;
@@ -259,33 +328,7 @@ body #fullGallery p{
 #fullGallery .imgBox{
     padding: 10px 0px;
 }
-/*************************************************/
-.scrollToTop{
-    width:50px; 
-	height:50px;
-	padding:10px; 
-	text-align:center; 
-	background: #000;
-	font-weight: bold;
-	color: #444;
-	text-decoration: none;
-	position:fixed;
-	top: 800px;
-	right:10px;
-	display:none;
-    z-index: 20000;
-    transition: all 0.3s;
-}
-.scrollToTop:hover{
-	text-decoration:none;
-     background-color: rgba(255, 255, 255, 0.19);
-    transition: all 0.3s;
-}
-.scrollToTop i{
-    font-size: 1.9em;
-    color: #00d179;
-}
-/***********************************************/
+/*GALLERY MODAL***********************************************/
 .modal.fade .modal-dialog .modal-content{
     background-color: transparent;
     box-shadow: none;
@@ -307,18 +350,4 @@ body #fullGallery p{
     color: #00d179;
     z-index: 1000;
     margin-left:  20px;
-}
-body>p{
-    display: block;
-    margin: 0;
-    background-color: #1a1a1a;
-    text-align: center;
-    padding: 0px 0;
-}
-body p a{
-    color: #3b3b3b;
-}
-body p a:hover{
-    color: #3b3b3b;
-    text-decoration: none;
 }
